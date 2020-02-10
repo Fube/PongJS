@@ -15,15 +15,10 @@ class Player{
 
     draw(){
         fill(this.color);
-        //this.y +=  this.speed*this.dir | this.y;
         return rect(this.x, this.y, this.w, this.h);
     }
 
     move(dir){
         this.y += this.speed * dir;
-    }
-
-    ratio(screenW){
-        return screenW;
     }
 }
